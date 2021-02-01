@@ -1,7 +1,7 @@
 ---
 title: "Lab 02"
-author: ""
-date: ""
+author: "Caleb Woo"
+date: "02/01/21"
 output: 
   html_document:
     toc: true
@@ -44,6 +44,8 @@ need to set the class attribute to `"POSIXct"`
 
 ```{r}
 z <- seq(0, 3600 * 10, by = 3600)
+
+z$datetime <- as.POSIXct(z)
 ```
 
 What do you notice about the date-time? If you are unsure, check out
